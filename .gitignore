@@ -1,0 +1,46 @@
+# SAGE FILES - Git Ignore
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+.env
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Project specific - Large files
+*.mp4
+*.mp3
+*.wav
+*.avi
+*.mov
+04_Archive/raw_footage/
+04_Archive/audio/
+01_Pending_Approval/
+02_Approved/
+03_Published/
+
+# Logs
+logs/
+*.log
+
+# Cache
+cache/
+.cache/
+
+# API Keys (keep these secret!)
+config/pexels_key.txt
+*.pem
+

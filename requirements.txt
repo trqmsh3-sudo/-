@@ -1,0 +1,40 @@
+# SAGE FILES - Python Dependencies
+# YouTube Automation Project
+
+# Video editing
+moviepy>=2.0.0
+imageio>=2.30.0
+imageio-ffmpeg>=0.4.8
+
+# Text-to-Speech (Free)
+edge-tts>=6.1.0
+
+# Image processing
+Pillow>=10.0.0
+numpy>=1.24.0
+
+# Audio processing
+pydub>=0.25.1
+
+# API requests
+requests>=2.31.0
+
+# Async support
+aiohttp>=3.8.0
+
+# Environment variables
+python-dotenv>=1.0.0
+
+# Progress bars
+tqdm>=4.65.0
+
+# YAML config
+PyYAML>=6.0
+
+# Optional: Better TTS (paid)
+# elevenlabs>=0.2.0
+
+# Optional: YouTube upload
+# google-api-python-client>=2.0.0
+# google-auth-oauthlib>=1.0.0
+
