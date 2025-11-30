@@ -17,7 +17,10 @@ from moviepy import (
 from PIL import Image, ImageDraw, ImageFont
 import numpy as np
 
-from visual_cue_parser import VisualCueParser, VisualCue, VisualType, print_cue_summary
+try:
+    from visual_cue_parser import VisualCueParser, VisualCue, VisualType, print_cue_summary
+except ImportError:
+    from .visual_cue_parser import VisualCueParser, VisualCue, VisualType, print_cue_summary
 
 
 # === CONFIGURATION ===
@@ -489,7 +492,10 @@ if __name__ == "__main__":
     audio_path = args.audio
     if not audio_path:
         print("🎙️ Generating voiceover...")
-        from voiceover_free import generate_voiceover
+        try:
+            from voiceover_free import generate_voiceover
+        except ImportError:
+            from .voiceover_free import generate_voiceover
         audio_path = generate_voiceover(args.script, voice=args.voice, title=args.title)
     
     # Create video
